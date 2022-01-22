@@ -20,11 +20,12 @@ class Ball {
         push();
         translate(position.x, position.y);
         rotate(angle);
-        strokeWeight(2);
+        /*strokeWeight(2);
         stroke('black');
         fill('white');
         ellipseMode(RADIUS);
-        ellipse(0, 0, this.width, this.height);
+        ellipse(0, 0, this.width, this.height);*/
+        image(0, 0, this.image, this.width, this.height)
         pop();
     }
 }
