@@ -7,7 +7,7 @@ class Ball {
             'restitution':0.3,
             'isStatic':false
         }
-        this.image = loadImage('paper.png')
+        this.image = loadImage('paper.png');
         this.body = Bodies.circle(x, y, 50, options);
         this.width = 50;
         this.height = 50;
@@ -20,12 +20,9 @@ class Ball {
         push();
         translate(position.x, position.y);
         rotate(angle);
-        /*strokeWeight(2);
-        stroke('black');
-        fill('white');
         ellipseMode(RADIUS);
-        ellipse(0, 0, this.width, this.height);*/
-        image(0, 0, this.image, this.width, this.height)
+        imageMode(CENTER);
+        image(this.image,30, 30, this.width, this.height);
         pop();
     }
 }
